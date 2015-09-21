@@ -1,0 +1,18 @@
+{
+  "name": "issue-link-builder",
+  "version": "0.0.0",
+  "dependencies": {
+    "browserify": "^11.1.0",
+    "cmsxify": "^0.2.0",
+    "lodash": "^3.10.1",
+    "mithril": "^0.2.0"
+  },
+  "devDependencies": {
+    "watchify": "^3.4.0"
+  },
+  "scripts": {
+    "build": "browserify -t cmsxify app/assets/javascripts/index.coffee -o app/assets/javascripts/bundle.js",
+    "watch-js": "watchify -d -v -t cmsxify app/assets/javascripts/index.coffee -o app/assets/javascripts/bundle.js"
+  },
+  "license": "BSD"
+}
