@@ -11,8 +11,8 @@
     "watchify": "^3.4.0"
   },
   "scripts": {
-    "postinstall": "browserify -t cmsxify app/assets/javascripts/index.coffee -o app/assets/javascripts/bundle.js",
-    "watch-js": "watchify -d -v -t cmsxify app/assets/javascripts/index.coffee -o app/assets/javascripts/bundle.js"
+    "postinstall": "browserify -t cmsxify vendor/assets/javascripts/index.coffee -o app/assets/javascripts/bundle.js",
+    "watch-js": "watchify -d -v -t cmsxify vendor/assets/javascripts/index.coffee -o app/assets/javascripts/bundle.js"
   },
   "license": "BSD"
 }
